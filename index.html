@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main-container">
+    <div class="background">
+      <img src="./images/bg-main-mobile.png" >
+    </div>
+    <div class="form-container">
+      <form id="info-form">
+        <span>cardholder name</span>
+        <input type="text" name="card-name" placeholder="e.g. Jane Appleseed">
+        <span>card number</span>
+        <input type="text" name="card-number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000">
+        <span class="errorMessage hidden">Invalid number</span>
+        
+        <div class="datecvc">
+          <div>
+            <span style="width: 100%;">exp. date (mm/yy)</span>
+          <input type="text" name="card-month" maxlength="2" placeholder="MM">
+          <span class="errorMessage hidden">Invalid date</span>
+          <input type="text" name="card-year" maxlength="2" placeholder="YY">
+          <span class="errorMessage hidden">Invalid date</span>
+    
+          </div>
+
+        <div>
+          <span style="width: 100%;">CVC</span>
+          <input type="text" name="card-cvc" maxlength="3" placeholder="e.g. 123">
+        <span class="errorMessage hidden">Invalid CVC</span>
+
+        </div>
+        </div>
+        
+        <input type="submit" value="Confirm">
+      </form>
+
+      <div class="complete-container hidden">
+        <img src="./images/icon-complete.svg">
+        <span>thank you!</span>
+        <span>We've added your card details</span>
+        <button id="continue-button">continue</button>
+      </div>
+    </div>
+    
+    <img src="./images/bg-card-back.png" class="card-back">
+    <span class="card-cvc">000</span>
+    <img src="./images/bg-card-front.png" class="card-front">
+    <img src="./images/card-logo.svg" class="card-logo">
+    <span class="card-number">0000 0000 0000 0000</span>
+    <span class="card-name">Jane Appleseed</span>
+    <span class="card-year">00</span>
+    <span class="card-month">00</span> 
+
+  </main>
+
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jaber Ali</a>.
+  </div>
+-->
+<script src="./main.js"></script>
+</body>
+</html>
