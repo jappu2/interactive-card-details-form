@@ -18,7 +18,8 @@
 }
 
 .main-container{
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     height: 100vh;
     display: flex;
     flex-direction: column;
