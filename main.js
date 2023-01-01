@@ -96,7 +96,7 @@
      }
 
      function  clearCard(){
-         document.querySelector('.card-name').innerText = 'Jaber Ali AKA Jappu'
+         document.querySelector('.card-name').innerText = 'Jaber Ali'
          document.querySelector('.card-number').innerText = '0000 0000 0000 0000'
          document.querySelector('.card-cvc').innerText = '000'
          document.querySelector('.card-month').innerText = '00'
