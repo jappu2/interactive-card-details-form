@@ -3,7 +3,7 @@
     --Linear-gradient-first: hsl(249, 99%, 64%); 
     --Linear-gradient-second: hsl(278, 94%, 30%);
     --Red: hsl(0, 100%, 66%);
-    --White: hsl(0, 0%, 100%);
+    --White: hsl(0, 3%, 21%);
     --Light-grayish-violet: hsl(270, 3%, 87%);
     --Dark-grayish-violet: hsl(279, 6%, 55%);
     --Very-dark-violet: hsl(278, 68%, 11%)
@@ -124,7 +124,11 @@ input.error{
 
 .card-back, .card-front{
     position: absolute;
-    width: 80%
+    width: 300px
+}
+
+.card-back img, .card-front img{
+    width: 100%
 }
 
 .card-back{
@@ -146,18 +150,18 @@ input.error{
 }
 
 .card-cvc{
-    top: 94px;
-    right: 55px
+    top: 43%;
+    right: 12%
 }
 
 .card-name{
-    top: 235px;
-    left: 40px;
+    top: 75%;
+    left: 7%;
 }
 
 .card-month{
-    top: 235px;
-    right: 96px;
+    top: 75%;
+    right: 16%;
     
 }
 
@@ -166,22 +170,23 @@ input.error{
 }
 
 .card-year{
-    top: 235px;
-    right: 80px;
+    top: 75%;
+    right: 10%;
     
 }
 
 .card-number{
-    top: 195px;
-    left: 40px;
+    top: 50%;
+    left: 7%;
     font-size: 21px;
     letter-spacing:10;
 }
 
 .card-logo{
-    top: 135px;
-    left: 40px;
-    height: 35px;
+    top: 15%;
+    left: 10%;
+    height: 23%;
+    width: 23% !important;
 }
 
 .hidden{
@@ -194,3 +199,14 @@ input.error{
     text-transform: none;
     margin-top: 0;
 }
+
+.attribution {
+    color: var(--Linear-gradient-second);
+    font-size: 13px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+
+@media(min-width)

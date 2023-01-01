@@ -7,8 +7,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive card details form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +17,7 @@
     <div class="form-container">
       <form id="info-form">
         <span>cardholder name</span>
-        <input type="text" name="card-name" placeholder="e.g. Jane Appleseed">
+        <input type="text" name="card-name" placeholder="e.g. Jaber Ali">
         <span>card number</span>
         <input type="text" name="card-number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000">
         <span class="errorMessage hidden">Invalid number</span>
@@ -53,23 +51,33 @@
       </div>
     </div>
     
-    <img src="./images/bg-card-back.png" class="card-back">
-    <span class="card-cvc">000</span>
-    <img src="./images/bg-card-front.png" class="card-front">
-    <img src="./images/card-logo.svg" class="card-logo">
-    <span class="card-number">0000 0000 0000 0000</span>
-    <span class="card-name">Jane Appleseed</span>
-    <span class="card-year">00</span>
-    <span class="card-month">00</span> 
 
+    <div class="card-back">
+
+      <img src="./images/bg-card-back.png">
+      <span class="card-cvc">000</span>
+
+    </div>
+
+    <div class="card-front">
+
+      <img src="./images/bg-card-front.png" >
+      <img src="./images/card-logo.svg" class="card-logo">
+      <span class="card-number">0000 0000 0000 0000</span>
+      <span class="card-name">Jaber Ali</span>
+      <span class="card-year">00</span>
+      <span class="card-month">00</span>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Jaber Ali</a>.
+    </div>
   </main>
 
-  <!--
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Jaber Ali</a>.
-  </div>
--->
+
+
 <script src="./main.js"></script>
 </body>
 </html>

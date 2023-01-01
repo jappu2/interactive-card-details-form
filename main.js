@@ -65,10 +65,7 @@
         function(evt){
             evt.preventDefault()
 
-            if (document.querySelector('.error')){
-                console.log('wtf')
-            }
-            else{
+            if (document.querySelector('.error') == null){
                 let empty = false
                 inputFileds.forEach(e => e.value == '' ? empty = true : null) 
                 if (empty)  return 
@@ -81,6 +78,7 @@
         form.reset()
         form.classList.remove('hidden')
         completeContainer.classList.add('hidden')
+        clearCard()
 
     })
     function inRange(x, min, max) {
@@ -96,3 +94,11 @@
      function removeError(e){
         e.nextElementSibling.classList.add('hidden')
      }
+
+     function  clearCard(){
+         document.querySelector('.card-name').innerText = 'Jaber Ali AKA Jappu'
+         document.querySelector('.card-number').innerText = '0000 0000 0000 0000'
+         document.querySelector('.card-cvc').innerText = '000'
+         document.querySelector('.card-month').innerText = '00'
+         document.querySelector('.card-year').innerText = '00'
+    }
