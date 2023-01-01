@@ -1,4 +1,4 @@
-
+ 
     let inputFileds = document.querySelectorAll('[type="text"]')
     inputFileds.forEach(e => e.addEventListener('keyup', 
     function() {
