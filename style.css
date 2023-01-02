@@ -17,13 +17,22 @@
     font-family: 'Space Grotesk', sans-serif;
 }
 
+body {
+    width: 375px;
+}
+
 .main-container{
     width: 100%;
-    max-width: 375px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.background{
+    background-image: url(./images/bg-main-mobile.png);
+    height: 240px;
+    width: 100%;
 }
 
 .form-container{
@@ -207,4 +216,71 @@ input.error{
     text-align: center;
     width: 70%;
     margin: auto;
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+    
+    body {
+        width: 100%;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        max-height: 900px;
+    }
+
+    .background{
+        background-image: url(./images/bg-main-desktop.png);
+        height: 900px;
+        max-width: 483px;
+    }
+    
+    .form-container{
+        width: 100%;
+        max-width:470px;
+        margin: auto;
+    }
+    
+    .form-container form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        padding: 20px;
+        transition: display 0.5s;
+    }
+
+    .card-number{
+        font-size: 2.33vw !important
+    }
+    .card-back span, .card-front span{
+        font-size: 1.3vw
+    }
+
+    .card-back, .card-front{
+        width: 30%;
+        min-width: 300px;
+        max-width: 450px;
+    }
+
+    .card-back{
+        top: 35vw;
+        left: 17%
+    }
+    
+    
+    .card-front{
+        top: 240px;
+        left: 10%
+    }
+
+    .complete-container{
+        margin: auto;
+        width: 500px;
+    }
+
 }

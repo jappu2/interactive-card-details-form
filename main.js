@@ -60,6 +60,7 @@
 
     let form = document.querySelector('#info-form'),
     completeContainer = document.querySelector(".complete-container"),
+    formContainer = document.querySelector(".form-container"),
     continueButton = document.querySelector('#continue-button')
     form.addEventListener('submit', 
         function(evt){
@@ -69,14 +70,14 @@
                 let empty = false
                 inputFileds.forEach(e => e.value == '' ? empty = true : null) 
                 if (empty)  return 
-                form.classList.add('hidden')
+                formContainer.classList.add('hidden')
                 completeContainer.classList.remove('hidden')
             }
         }
     )
     continueButton.addEventListener('click', function (){
         form.reset()
-        form.classList.remove('hidden')
+        formContainer.classList.remove('hidden')
         completeContainer.classList.add('hidden')
         clearCard()
 
@@ -97,7 +98,7 @@
 
      function  clearCard(){
          document.querySelector('.card-name').innerText = 'Jaber Ali'
-         document.querySelector('.card-number').innerText = '0000 0000 0000 0000'
+         document.querySelector('.card-number').innerText = '0000000000000000'
          document.querySelector('.card-cvc').innerText = '000'
          document.querySelector('.card-month').innerText = '00'
          document.querySelector('.card-year').innerText = '00'
