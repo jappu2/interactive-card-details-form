@@ -77,9 +77,9 @@
     )
     continueButton.addEventListener('click', function (){
         form.reset()
+        clearCard()
         formContainer.classList.remove('hidden')
         completeContainer.classList.add('hidden')
-        clearCard()
 
     })
     function inRange(x, min, max) {
